@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Crea tu blog gratis con Ghost en AWS EC2"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@luis_hmr0"/>
+
+
+
+  	<meta property="og:title" content="Crea tu blog gratis con Ghost en AWS EC2 &middot; luishmr0" />
+  	<meta property="og:site_name" content="luishmr0" />
+  	<meta property="og:url" content="https://luishmr0.github.io/post/ghost/" />
+
+    
+        
+            <meta property="og:image" content="/b2/images/bg.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2016-07-11T10:54:24&#43;02:00" />
+
+    
+    <meta property="article:tag" content="ghost" />
+    
+    <meta property="article:tag" content="cms" />
+    
+    
+
+    <title>Crea tu blog gratis con Ghost en AWS EC2 &middot; luishmr0</title>
+
+    
+    <meta name="description" content="Vamos a ver como tener nuestro blog en ghost por un año gratis en AWS Comenzamos escogiendo el SO de la AMI, en este caso usaremos Ubuntu porque he visto más tu" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://luishmr0.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://luishmr0.github.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://luishmr0.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://luishmr0.github.io/css/nav.css" />
+
+    
+
+    
+
+    
+        <link href="http://feeds.feedburner.com/..." rel="alternate" type="application/rss+xml" title="luishmr0" />
+    
+    <meta name="generator" content="Hugo 0.30-DEV" />
+
+    <link rel="canonical" href="https://luishmr0.github.io/post/ghost/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://luishmr0.github.io/images/darth.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://luishmr0.github.io/images/darth.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://lhmr.tech,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Crea tu blog gratis con Ghost en AWS EC2,
+    "name": Crea tu blog gratis con Ghost en AWS EC2,
+    "wordCount": 385,
+    "timeRequired": "PT2M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://luishmr0.github.io/post/ghost/,
+    "datePublished": 2016-07-11T10:54Z,
+    "dateModified": 2016-07-11T10:54Z,
+    
+    "keywords": ghost, cms,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://luishmr0.github.io/post/ghost/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.hotslogs.com/Player/Profile?PlayerID=2484740">Heroes of the Storm</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/luis_hmr0">Twitter</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/luishmr0">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luishmr0.github.io/about">Acerca</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luishmr0.github.io/">Blog</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/...">Subscribe</a> </div>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://luishmr0.github.io/"><img src="https://luishmr0.github.io/images/darth.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Crea tu blog gratis con Ghost en AWS EC2</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-07-11T10:54:24&#43;02:00">
+            Jul 11, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://luishmr0.github.io//tags/ghost/">#ghost</a></span>
+         
+          <span class="post-tag small"><a href="https://luishmr0.github.io//tags/cms/">#cms</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<h2 id="vamos-a-ver-como-tener-nuestro-blog-en-ghost-por-un-año-gratis-en-aws">Vamos a ver como tener nuestro blog en ghost por un año gratis en AWS</h2>
+
+<p>Comenzamos escogiendo el SO de la AMI, en este caso usaremos Ubuntu porque he visto más tutoriales hechos de Amazon Linux
+<img src="https://luishmr0.github.io/images/b1.png" alt="" />
+Escogemos la free tier, los cual no va a dar que un año gratis sin pagar nada si es que dejamos a la Instrancia de EC2 prendida todo el año
+<img src="https://luishmr0.github.io/images/b2.png" alt="" />
+Añadimos el accesso a HTTP para no estar configurando después
+<img src="https://luishmr0.github.io/images/b3.png" alt="" /></p>
+
+<h4 id="conectamos-al-servidor">Conectamos al servidor</h4>
+
+<p>Posteriormente lanzamos la instancia pero previamente guardado la clave SSH, es decir el .pem, que nos dará acceso al servidor.
+Ahora tendremos que conectarnos por SSH al servidor, para eso acá hay un <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html">tutorial</a> de Amazon de como tranformar tu .pen en .ppk para poder usar PuTTY
+<img src="https://luishmr0.github.io/images/b4.png" alt="" />
+En hostname ponemos el usuario que es ubuntu junto con nuestra IP o DNS público  que sale en la instancia de EC2</p>
+
+<pre><code> ubuntu@ipPublica
+</code></pre>
+
+<p>Y nos vamos a la opcion SSH, Auth y en Browse cargamos nuestra .ppk genrado
+<img src="https://luishmr0.github.io/images/b5.png" alt="" />
+Una vez conectado actualizaremos los paquetes de ubuntu</p>
+
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+</code></pre>
+
+<h4 id="nodejs">NodeJS</h4>
+
+<p>Instalamos NodeJS</p>
+
+<pre><code>curl --silent --location      https://deb.nodesource.com/setup_0.12 | sudo bash - 
+</code></pre>
+
+<p>después</p>
+
+<pre><code>sudo apt-get install --yes nodejs
+</code></pre>
+
+<p>####Nginx
+Instalamos Nginx</p>
+
+<pre><code>sudo apt-get install nginx
+</code></pre>
+
+<p>Configuramos Nginx para que ghost se escuche en puerto 80 (puedes usar nano en vez de vi como editor)</p>
+
+<pre><code>sudo touch /etc/nginx/sites-available/ghost.conf
+sudo vi /etc/nginx/sites-available/ghost.conf
+</code></pre>
+
+<p>Y copien esta configuración(dominio puede ser cambiado por tu ip pública)</p>
+
+<pre><code>server {
+listen 80;
+server_name [tudominio];
+
+location / {
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   Host      $http_host;
+    proxy_pass         http://127.0.0.1:2368;
+    }
+}
+</code></pre>
+
+<p>Creamos un symlink a esta configuración hecha</p>
+
+<pre><code>sudo ln -s /etc/nginx/sites-available/ghost.conf /etc/nginx/sites-enabled/ghost.conf
+</code></pre>
+
+<p>Reiniciamos Nginx</p>
+
+<pre><code>sudo service nginx restart
+</code></pre>
+
+<h4 id="ghost">Ghost</h4>
+
+<p>Creamos el directorio donde irá ghost</p>
+
+<pre><code>sudo mkdir -p /var/www/ 
+cd /var/www/
+</code></pre>
+
+<p>Descargamos ghost</p>
+
+<pre><code>sudo wget https://ghost.org/zip/ghost-latest.zip
+</code></pre>
+
+<p>Desempaquetamos</p>
+
+<pre><code>sudo unzip -d ghost ghost-latest.zip
+cd ghost/
+</code></pre>
+
+<p>Finalmente instalamos</p>
+
+<pre><code>sudo npm install --production
+</code></pre>
+
+<p>Editamos el archivo de configuración de ghost(se puede usar nano como editor)</p>
+
+<pre><code>sudo vi config.js
+</code></pre>
+
+<p>Y cambiamos el url</p>
+
+<pre><code>url: 'http://dominio',
+</code></pre>
+
+<p>Iniciamos Ghost</p>
+
+<pre><code>sudo NODE_ENV=production forever start index.js
+</code></pre>
+
+<p>Y al iniciar tu dominio debe cargar el blog, para configurarlo solo deben entrar en dominio/ghost/</p>
+
+<p>###+ dominio
+Para configurar tu dominio sin tener que usar la IP elástica de EC2, solo debemos apuntar a la ip pública pero no tendríamos que reiniciar la instancia para que no cambie
+<img src="https://luishmr0.github.io/images/b6.png" alt="" /></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://luishmr0.github.io/" style="background-image: url(/images/darth.png)"><span class="hidden">Luis Marin's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://luishmr0.github.io/">Luis Marin</a></h4>
+  
+  <p>Read <a href="https://luishmr0.github.io/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Peru</span>
+    <span class="author-link icon-link"><a href="http://lhmr.tech">http://lhmr.tech</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Crea%20tu%20blog%20gratis%20con%20Ghost%20en%20AWS%20EC2&nbsp;-&nbsp;luishmr0&amp;url=https%3a%2f%2fluishmr0.github.io%2fpost%2fghost%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fluishmr0.github.io%2fpost%2fghost%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fluishmr0.github.io%2fpost%2fghost%2f&amp;description=Crea%20tu%20blog%20gratis%20con%20Ghost%20en%20AWS%20EC2"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fluishmr0.github.io%2fpost%2fghost%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/luishmr0.github.io\/post\/ghost\/";  
+this.page.identifier = "https:\/\/luishmr0.github.io\/post\/ghost\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://luishmr0.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="https://luishmr0.github.io/post/go-config/">
+          <section class="post">
+              <h2>Configuración de go en Windows</h2>
+              
+          </section>
+      </a>
+  
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">luishmr0</a> All rights reserved - 2016</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://luishmr0.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://luishmr0.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://luishmr0.github.io/js/index.js"></script>
+    
+</body>
+</html>
+

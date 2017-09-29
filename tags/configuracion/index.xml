@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuracion on luishmr0</title>
+    <link>https://luishmr0.github.io/tags/configuracion/</link>
+    <description>Recent content in Configuracion on luishmr0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Sat, 03 Sep 2016 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://luishmr0.github.io/tags/configuracion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuración de go en Windows</title>
+      <link>https://luishmr0.github.io/post/go-config/</link>
+      <pubDate>Sat, 03 Sep 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/go-config/</guid>
+      <description>Configuraremos las variables de entorno de go para poder usarlo en windows, configuraremos GOPATH y Path Primero tenemos que haber descargado go desde acá Después de haber instalado Go, tendremos que configurar las variables de entorno: Clic derecho en Mi PC y vamos a Opciones avanzadas del sistema y posteriormente a Variables de entorno En variables de usuario seleccionamos Path y le damos en editar Damos clic en nuevo y añadimos la ruta del bin de Go C:\Go\bin o donde hayamos instlado En variables del sistema damos en nuevo Y añadimos GOPATH y pondremos en value la carpetaa o ubicación de proyectos C:\Go\Proyectos o donde queramos hacerlo Para comprobar podemos usar go versiony para ver que las variables del sistema estén bien configuradas echo %GOPATH% posteriormente obtenemos el Hello Go</description>
+    </item>
+    
+  </channel>
+</rss>

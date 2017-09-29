@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on luishmr0</title>
+    <link>https://luishmr0.github.io/post/</link>
+    <description>Recent content in Posts on luishmr0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Fri, 28 Oct 2016 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://luishmr0.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crea tu blog gratis en Github con Hugo</title>
+      <link>https://luishmr0.github.io/post/hugo/</link>
+      <pubDate>Fri, 28 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/hugo/</guid>
+      <description>Hugo es un web engine muy rápido y moderno, como nos dicen en su web, y lo mejor que corre sobre go, cuanta con más de 100 temas para hacer personalizable nuestra web. Nos puede servir para hacer webs para nuestros repositorios o lo que deesemos. Para esto necesitaremos:
+ Tener instalado git Tener una cuenta en Github Haber instalado y configurado go  En el ejemplo usaremos windows para desplegar nuestro sitio.</description>
+    </item>
+    
+    <item>
+      <title>Despliega tu webapp en Heroku</title>
+      <link>https://luishmr0.github.io/post/heroku/</link>
+      <pubDate>Tue, 25 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/heroku/</guid>
+      <description>Para esto necesitaremos:
+ Tener instalado git Tener una cuenta en Heroku Haber instalado y configurado el Heroku CLI  Desplegaremos la webapp hecha con Spring Boot en Heroku Para ellos necesitaremos registrarnos en Heroku, tiene una capa gratis donde nos permite 5 apps, tendremos que vincular nuestra tarjeta de crédito/débito para poder añadir la base de datos
+Clonamos o descargamos el repositorio donde está el proyecto link, usaremos la carpeta democrud</description>
+    </item>
+    
+    <item>
+      <title>Crea tu RESTful API en GO</title>
+      <link>https://luishmr0.github.io/post/restful-go/</link>
+      <pubDate>Wed, 19 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/restful-go/</guid>
+      <description>Veremos una RESTful API en go usando gin para las routes y gorp como ORM para MySQL Primera consulta con la tabla generada por gorp, vemos que no hay nada en la BD en users Insertamos mediante POST en el mismo users, tan solo pasando el nombre y apellido, ya que el id es autogenerado Consultamos el usuario que hemos insertado en users/id Consultamos las inserciones en mysql para asegurarnos Podemos actualizar ingresando en users/id y usamos el método PUT y actualizamos los valores deseados Podemos eliminar las inserciones tan solo con el método DELETE en users/id  </description>
+    </item>
+    
+    <item>
+      <title>Ejemplos de consumos de APIs en go</title>
+      <link>https://luishmr0.github.io/post/go-consumo.api/</link>
+      <pubDate>Tue, 18 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/go-consumo.api/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>Instala ghost localmente en Windows</title>
+      <link>https://luishmr0.github.io/post/ghost-local/</link>
+      <pubDate>Sat, 15 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/ghost-local/</guid>
+      <description>Instalaremos Ghost locamente en Windows, en simples pasos podrás probar Ghost para convencerte de usarlo
+Node.js Ghost corre bajo nodejs, por lo cual debes tener instalado para instalar, acá
+Ghost Primero tenemos que descargar ghost Después abrimos el command prompt de Node.js Ahora ubícamos la carpeta donde descomprimimos ghost, la última versión al día de hoy es la 0.11.2
+cd carpeta/ghost-0.11.2  Ahora instalamos
+npm install --production  Una vez que haya instalado levantamos Ghost</description>
+    </item>
+    
+    <item>
+      <title>Tutorial básico de go!</title>
+      <link>https://luishmr0.github.io/post/go/</link>
+      <pubDate>Wed, 05 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/go/</guid>
+      <description>Acá veremos algunos ejemplos básicos en go como variables, condiciones, estructuras, arreglos, ciclos, interfaces, slices
+Se puede usar la web de go para probar los ejemplos básicos que pondré más adelante, aunque recomiendo instalar en tu computadora, descarga acá
+Declaración de variables
+package main import (&amp;quot;fmt&amp;quot; &amp;quot;strconv&amp;quot;) func main() { var nombre string var edad int edad=21 nombre=&amp;quot;Luis&amp;quot; edadstrng:=strconv.Itoa(edad) fmt.Println(nombre+&amp;quot; y su edad &amp;quot;+edadstrng) }  Las variables en go se pueden declarar y asignar al mismo tiempo de la siguiente manera := el tipo de dato se asignará automáticamente de acuerdo a lo que ingrese</description>
+    </item>
+    
+    <item>
+      <title>Configuración de go en Windows</title>
+      <link>https://luishmr0.github.io/post/go-config/</link>
+      <pubDate>Sat, 03 Sep 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/go-config/</guid>
+      <description>Configuraremos las variables de entorno de go para poder usarlo en windows, configuraremos GOPATH y Path Primero tenemos que haber descargado go desde acá Después de haber instalado Go, tendremos que configurar las variables de entorno: Clic derecho en Mi PC y vamos a Opciones avanzadas del sistema y posteriormente a Variables de entorno En variables de usuario seleccionamos Path y le damos en editar Damos clic en nuevo y añadimos la ruta del bin de Go C:\Go\bin o donde hayamos instlado En variables del sistema damos en nuevo Y añadimos GOPATH y pondremos en value la carpetaa o ubicación de proyectos C:\Go\Proyectos o donde queramos hacerlo Para comprobar podemos usar go versiony para ver que las variables del sistema estén bien configuradas echo %GOPATH% posteriormente obtenemos el Hello Go</description>
+    </item>
+    
+    <item>
+      <title>Crea tu blog gratis con Ghost en AWS EC2</title>
+      <link>https://luishmr0.github.io/post/ghost/</link>
+      <pubDate>Mon, 11 Jul 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/ghost/</guid>
+      <description>Vamos a ver como tener nuestro blog en ghost por un año gratis en AWS Comenzamos escogiendo el SO de la AMI, en este caso usaremos Ubuntu porque he visto más tutoriales hechos de Amazon Linux Escogemos la free tier, los cual no va a dar que un año gratis sin pagar nada si es que dejamos a la Instrancia de EC2 prendida todo el año Añadimos el accesso a HTTP para no estar configurando después Conectamos al servidor Posteriormente lanzamos la instancia pero previamente guardado la clave SSH, es decir el .</description>
+    </item>
+    
+  </channel>
+</rss>

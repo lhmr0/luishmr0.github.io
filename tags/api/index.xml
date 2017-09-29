@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on luishmr0</title>
+    <link>https://luishmr0.github.io/tags/api/</link>
+    <description>Recent content in Api on luishmr0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Wed, 19 Oct 2016 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://luishmr0.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crea tu RESTful API en GO</title>
+      <link>https://luishmr0.github.io/post/restful-go/</link>
+      <pubDate>Wed, 19 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/restful-go/</guid>
+      <description>Veremos una RESTful API en go usando gin para las routes y gorp como ORM para MySQL Primera consulta con la tabla generada por gorp, vemos que no hay nada en la BD en users Insertamos mediante POST en el mismo users, tan solo pasando el nombre y apellido, ya que el id es autogenerado Consultamos el usuario que hemos insertado en users/id Consultamos las inserciones en mysql para asegurarnos Podemos actualizar ingresando en users/id y usamos el método PUT y actualizamos los valores deseados Podemos eliminar las inserciones tan solo con el método DELETE en users/id  </description>
+    </item>
+    
+    <item>
+      <title>Ejemplos de consumos de APIs en go</title>
+      <link>https://luishmr0.github.io/post/go-consumo.api/</link>
+      <pubDate>Tue, 18 Oct 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/post/go-consumo.api/</guid>
+      <description>   </description>
+    </item>
+    
+  </channel>
+</rss>
